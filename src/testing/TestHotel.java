@@ -1,17 +1,14 @@
 package testing;
 
-/* Uncomment the below code to test your application
-
+// Uncomment the below code to test your application
 import model.Hotel;
 import java.time.LocalDate;
 import static org.junit.Assert.*;
 import org.junit.Test;
-
 public class TestHotel {
 	LocalDate ld1 = LocalDate.of(2020, 02, 03);
 	LocalDate ld2 = LocalDate.of(2020, 02, 07);
 	Hotel hotel = new Hotel(2, "nonac", 20000, "single", ld1, ld2);
-
 	@Test
 	public void testGetNoOfPersonMethod() {
 		hotel.setNoOfPersons(5);
@@ -25,7 +22,6 @@ public class TestHotel {
 			e.printStackTrace();
 		}
 	}
-
 	@Test
 	public void testGetRateMethod() {
 		hotel.setRates(12000);
@@ -39,7 +35,6 @@ public class TestHotel {
 			e.printStackTrace();
 		}
 	}
-
 	@Test
 	public void testGetRoomType() {
 		hotel.setRoomType("ac");
@@ -50,7 +45,6 @@ public class TestHotel {
 			e.printStackTrace();
 		}
 	}
-
 	@Test
 	public void testSetDate() {
 		try {
@@ -60,6 +54,4 @@ public class TestHotel {
 			e.printStackTrace();
 		}
 	}
-
 }
-*/

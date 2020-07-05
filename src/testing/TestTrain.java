@@ -1,12 +1,10 @@
 package testing;
 
-/* Uncomment the below code to test your application
-
+// Uncomment the below code to test your application
 import model.Train;
 import java.time.LocalDate;
 import static org.junit.Assert.*;  
 import org.junit.Test;
-
 public class TestTrain {
 	LocalDate ld = LocalDate.of(2020, 02, 03);
 	Train train = new Train(2,1500,"nonac",ld);
@@ -63,5 +61,3 @@ public class TestTrain {
 		}
 	}
 }
-
-*/

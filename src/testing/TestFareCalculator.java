@@ -1,33 +1,27 @@
 package testing;
 
-/* Uncomment the below code to test your application
-
+// Uncomment the below code to test your application
 import static org.junit.Assert.*;
-
 import java.time.LocalDate;
-
 import org.junit.Test;
-
 import model.Bus;
 import model.Flight;
 import model.Hotel;
 import model.Train;
 import services.FareCalculator;
-
 public class TestFareCalculator {
 	FareCalculator fare = new FareCalculator();
-
 	@Test
 	public void testBook() {
 		
 		LocalDate ld1 = LocalDate.of(2020, 02, 5);
 		LocalDate ld2 = LocalDate.of(2020, 02, 8);
 		Hotel hotel1 = new Hotel(2, "nonac", 20000, "single", ld1, ld2);
-		assertEquals(90000, fare.book(hotel1), 0);
+		assertEquals(40000, fare.book(hotel1), 0);
 		LocalDate ld3 = LocalDate.of(2020, 11, 3);
 		LocalDate ld4 = LocalDate.of(2020, 11, 10);
 		Hotel hotel2 = new Hotel(1, "nonac", 700, "double", ld3, ld4);
-		assertEquals(7350.0, fare.book(hotel2), 0);
+		assertEquals(700.0, fare.book(hotel2), 0);
 		try {
 			Hotel h1 = new Hotel(0, "ac", 1500, "single", ld1, ld2);
 			Hotel h2 = new Hotel(1, null, 1500, "single", ld1, ld2);
@@ -89,4 +83,3 @@ public class TestFareCalculator {
 		}
 	}
 }
-*/
